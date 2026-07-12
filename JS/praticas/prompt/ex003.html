@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM e operadores</title>
+</head>
+<body>
+    <p style="display: none;">Errou!🤣🤣</p>
+    <p style="display: none;">Acertou!!😎✌</p>
+    <p style="display: none;">Errou!🤣🤣</p>
+    <p></p>
+    <script>
+        var p = window.prompt('Escolha um número de 1 a 3')
+        var r1 = p == 1
+        var r2 = p == 2 
+        var r3 = p == 3
+        var p1 = window.document.getElementsByTagName('p') [0]
+        var p2 = window.document.getElementsByTagName('p') [1]
+        var p3 = window.document.getElementsByTagName('p') [2]
+        var p4 = window.document.getElementsByTagName('p') [3]
+        p1 = r1 == true ? p1.style.display = 'block' : ''
+        p2 = r2 == true ? p2.style.display = 'block' : ''
+        p3 = r3 == true ? p3.style.display = 'block' : ''
+        p4 = r1 == true || r3 == true ? p4.innerHTML ='<h1>A correta é a alternativa 2!</h1>' : ''
+
+
+        
+        
+
+
+        // var p = Number(window.prompt('Escolha um número de 1 a 3'))
+        // var r1 = p == 1
+        // var r2 = p == 2
+        // var r3 = p == 3
+        // var respostas = r1 == true ? document.write ('Voce escolheu 1!') : '' 
+        // r2 == true ? document.write ('voce escolheu 2!') : ''
+        // r3 == true ? document.write ('voce escolheu 3!') : ''
+ 
+    </script>
+</body>
+</html>

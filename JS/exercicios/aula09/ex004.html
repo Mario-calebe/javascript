@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(43, 82, 82);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p id="p1">Resultado 1</p>
+    <p class="p2">Resultado 2</p>
+    <p class="p3">Resultado 3</p>
+    <div id="d">CLIQUE EM MIM!</div>
+    <script>
+        // var corpo = window.document.body
+        // var p = window.document.getElementsByTagName('p')[1]
+        // p.style.color = 'white'
+        // // window.alert(p.innerText.alert = `${p.innerText} oi`)
+        // var d = window.document.querySelector ('#d')
+        // d.style.background = 'pink'
+        // d.style.color = 'blue'
+        // var d = d.innerText = 'Não clique em mim!'
+        var p1 = window.document.getElementById('p1')
+        var p2 = window.document.getElementsByClassName('p2')[0]
+        var p3 = window.document.querySelector('.p3')
+        p1.innerText = ''
+        p2.innerText = ''
+        p3.innerText = ''
+        // var p = window.prompt ('Escolha um Número de 1 a 3')
+        p1 = p1.innerText = 'Resultado 1'
+        p = p == 1 ? p2 : 'oi'
+</script>
+</body>
+</html> 
