@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    <h1>Bem vindo, ao meu segundo desafio</h1>
+    <button style="padding: 30px;">Iniciar Desafio</button>
+</body>
+<script>
+    var botao = window.document.querySelector('button')
+    botao.addEventListener('click', clicou)
+
+    function clicou() {
+        var nome = prompt('Olá visitante! Qual é o seu nome?')
+        var years = prompt(`Olá, ${nome} Quantos anos você tem?`)
+        alert(`Estou muito contente de ter sua visita! ${nome}, nossaaa! então você tem ${years}anos? Esse é meu número predileto!`)
+    }
+</script>
+</html>
