@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If e sels</title>
+</head>
+<body>
+    <h1>Politica 2026</h1>
+    <h2>Voto</h2>
+    <input type="radio" name="pt" id="ilula" onclick="clickl()">
+    <label for="ilula">Lula</label> <br>
+    <input type="radio" name="pt" id="iflavio">
+    <label for="iflavio">Flavio</label>
+</body>
+<script>
+    var lula = window.document.getElementById('ilula')
+    var ll = window.document.getElementsByTagName('label')[0]
+    var flavio = window.document.getElementById('iflavio')
+    var lf = window.document.getElementsByTagName('label')[1]
+
+    function clickl() {
+        if (lula.checked) {
+            ll.innerHTML += '| Escolha errada'
+        }
+
+    }
+    
+
+</script>
+</html>
