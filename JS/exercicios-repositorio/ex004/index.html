@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados em Js</title>
+</head>
+<body>
+    <h1>Trabalhando com Dados</h1>
+    <button style="padding: 30px;">Clique para começar</button>
+    <section id="resultado">
+        <p>Aqui vai aparecer o resultado....</p>
+    </section>
+</body>
+<script>
+    var res = window.document.getElementById('resultado')
+    var botao = window.document.getElementsByTagName('button')[0]
+    botao.addEventListener('click', cliquei)
+
+    function cliquei() {
+        var nome = prompt('Qual é seu nome?')
+        res.innerHTML = `<p>Olá, ${nome} Prazer em conhecer você &#x1F596;</p>`
+    }
+</script>
+</html>
