@@ -4,7 +4,8 @@ function carregar() {
     var imagem = window.document.getElementById('imagem')
     var data = new Date()
     var hora = data.getHours()
-    msg.innerHTML = `Agora são ${hora} Horas`
+    var minutos = data.getMinutes()
+    msg.innerHTML = `Agora são ${hora} Horas e ${minutos} Minutos`
     if (hora >= 5 && hora < 12) {
         // console.log('Bom dia');
         imagem.src = 'imagens/manha.jpg'
