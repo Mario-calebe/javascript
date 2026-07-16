@@ -17,6 +17,6 @@ function carregar() {
     }else{
         // console.log('Boa noite');
         imagem.src = 'imagens/noite.jpg'
-        document.body.style.background = '#201c1b'
+        document.body.style.background = '#0F1111'
     }
 }
