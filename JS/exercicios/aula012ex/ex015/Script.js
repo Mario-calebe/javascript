@@ -28,7 +28,7 @@ function verificar() {
             }else if (idade < 60){
                 img.setAttribute('src', 'imagens/adulto-m.png')
                 //Adulto
-            }else {
+            }else if (idade > 60){
                 img.setAttribute('src', 'imagens/Idoso-m.png')
                 //Idoso
             }
@@ -47,7 +47,9 @@ function verificar() {
                 img.setAttribute('src', 'imagens/adulto-f.png')
                 
                 //Adulto
-            }else{
+            }else if (idade > 60) {
+                
+            }{
                 img.setAttribute('src', 'imagens/Idosa-f.png')
                 //Idoso
             }
