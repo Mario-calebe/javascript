@@ -7,5 +7,22 @@
 </head>
 <body>
     <h1>Varios Calculos em JS</h1>
+    <button onclick="calcular()" style="padding: 30px;">Clique Para calcular</button>
+    <div id="res">Resultado aparece aqui...</div>
 </body>
+<script>
+    function calcular() {
+        var res = window.document.getElementById('res')
+        var n = window.prompt('Digite um número')
+        res.innerHTML = `O número a ser analisado aqui é o <strong>${n}</strong> <hr>`
+        res.innerHTML += `<p>O seu valor absoluto é <strong>${Math.abs(n)}</strong></p>`
+        res.innerHTML += `<p>A sua parte inteira é <strong>${Math.floor(n)}</strong></p>`
+        res.innerHTML += `<p>A sua parte inteira mais proxima é <strong>${Math.round(n)}</strong></p>`
+        res.innerHTML += `<p>A sua Raiz quadrada é <strong>${Math.sqrt(n)}</strong></p>`
+        res.innerHTML += `<p>A sua Raiz Cubida é de <strong>${Math.cbrt(n)}</strong></p>`
+        res.innerHTML += `<p>O valor de ${n}² é <strong>${n**2}</strong></p>`
+        res.innerHTML += `<p>O valor de ${n}³ é <strong>${n**3}</strong></p>`
+        
+    }
+</script>
 </html>

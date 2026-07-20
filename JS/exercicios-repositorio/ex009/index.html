@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de cliques</title>
+</head>
+<body>
+    <h1 style="font-family:'Pacifico', cursive;">Contador de clicks</h1>
+    <button onclick="contar()">Clique em mim</button>
+    <button onclick="zerar()">Zerar o contador</button>
+    <p id="contador">O contador esta com 0 cliques.</p>
+</body>
+<script>
+    var cont = window.document.getElementById('contador')
+    var contador = 0
+    function contar() {
+        cont.innerHTML = `O contador está com ${++contador} cliques.`
+    }
+    function name(params) {
+        
+    }
+</script>
+</html>
