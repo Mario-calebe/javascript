@@ -14,8 +14,8 @@
     botao.addEventListener('click', calcular)
     function calcular() {
     var label = prompt('Qual o nome do produto que você está comprando?')
-    var preço = prompt(`Quanto custa ${label}?`)
-    var money = prompt(`Quanto você deu para pagar ${label}?`)
+    var preço = Number(prompt(`Quanto custa ${label}?`))
+    var money = Number(prompt(`Quanto você deu para pagar ${label}?`))
     var troco = money - preço
     if (money >= preço) {
         alert(`Você comprou ${label} que custou R$${preço}.\nE deu R$${money} em dinheiro e vai receber R$${troco} de troco.\nVolte sempre!`)
