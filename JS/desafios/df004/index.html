@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de troco</title>
+</head>
+<body>
+    <h1>Calculando o troco</h1>
+    <button style="padding: 20px;">Comprar produto</button>
+</body>
+<script>
+    var botao = window.document.getElementsByTagName('button')[0]
+    botao.addEventListener('click', calcular)
+    function calcular() {
+    var label = prompt('Qual o nome do produto que você está comprando?')
+    var preço = prompt(`Quanto custa ${label}?`)
+    var money = prompt(`Quanto você deu para pagar ${label}?`)
+    var troco = money - preço
+    if (money >= preço) {
+        alert(`Você comprou ${label} que custou R$${preço}.\nE deu R$${money} em dinheiro e vai receber R$${troco} de troco.\nVolte sempre!`)
+    }else if(money < preço){
+        alert(`O valor que voce deu é insuficiente para comprar o produto!`)
+    }
+}
+</script>
+</html>
