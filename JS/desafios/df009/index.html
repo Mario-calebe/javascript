@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajuste no salárial</title>
+</head>
+<body>
+    <h1>Reajuste no salário</h1>
+    <button onclick="reajustar()" style="padding: 20px; margin-bottom: 10px;">Reajustar salário</button>
+    <div id="res">Clique no botão acima para iniciar.</div>
+</body>
+<script>
+    function reajustar() {
+        var res = document.getElementById('res')
+        var nome = prompt('Qual o nome do funcionario?')
+        var sl = Number(prompt(`Qual é o salario atual de ${nome} ?`))
+        var por = Number(prompt(`O salário de ${nome} vai ser reajustado em quantos porcento?`))
+        var aumento = sl * (por/100)
+        var rsl = sl + aumento
+        if (por < 20) {
+            res.innerHTML = `<h1>Pedro Paulo está legivel para um aumento salárial!</h1>`
+            res.innerHTML += `<p>O salário atual era de R$ ${sl.toLocaleString('pt-BR')}.</p>`
+            res.innerHTML += `<p>Com um aumento de ${por}% o salário de ${nome} vai aumenta em R$ ${aumento.toLocaleString('pt-BR')}.</p>`
+            res.innerHTML += `E ${nome} vai passar a receber R$ ${rsl.toLocaleString('pt-BR')}`
+        }else {
+            res.innerHTML = `<h1>Aumento salárial impossivel no momento.<br> ${nome} Está querendo ganhar mais do que a chefia🥱.</h1> `
+        }
+    }
+</script>
+</html>
