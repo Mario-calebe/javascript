@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antecessor e Sucessor</title>
+</head>
+<body>
+    <h1>Antes e depois</h1>
+    <button onclick="verificar()" style="padding: 20px;">Antecessor e Sucessor</button>
+</body>
+<script>
+    function verificar() {
+        var num = Number(window.prompt('Digite um número inteiro qualquer'))
+        window.alert(`O antecessor de ${num} é ${num - 1}.\n E o sucessor de ${num} é ${num + 1}.`)
+    }
+</script>
+</html>
