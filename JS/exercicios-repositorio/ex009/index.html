@@ -15,10 +15,12 @@
     var cont = window.document.getElementById('contador')
     var contador = 0
     function contar() {
-        cont.innerHTML = `O contador está com ${++contador} cliques.`
+        cont.innerHTML = `O contador está com ${contador++} cliques.`
     }
-    function name(params) {
-        
+    function zerar() {
+       if (contador > 0) {
+            cont.innerHTML = `O contador está com ${contador = 0} cliques.`
+       }
     }
 </script>
 </html>
