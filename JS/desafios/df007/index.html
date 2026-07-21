@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotação dolar</title>
+</head>
+<body>
+    <h1>Conversor R$ ➠ US$</h1>
+    <button onclick="converter()" style="padding: 20px; margin-bottom: 10px;">Converter</button>
+    <div id="res">Clique no botão acima para resultado...</div>
+</body>
+<script>
+    var dolar = Number(prompt('Qual a atual cotação do dolar?'))
+    var res = window.document.getElementById('res')
+    function converter() {
+        var r$ = Number(prompt('Quantos R$(reais) você tem na carteira?'))
+        if (r$ > dolar) {
+            res.innerHTML = `<p>Com R$${r$} você consegue comprar US$${r$ / dolar}</p>`
+        }else {
+            res.innerHTML = `<p>Bom... talves você prefira PIX né?</p>`
+        }
+    }
+</script>
+</html>
