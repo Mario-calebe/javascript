@@ -19,7 +19,7 @@
         var aumento = sl * (por/100)
         var rsl = sl + aumento
         if (por < 20) {
-            res.innerHTML = `<h1>Pedro Paulo está legivel para um aumento salárial!</h1>`
+            res.innerHTML = `<h1>${nome} está legivel para um aumento salárial!</h1>`
             res.innerHTML += `<p>O salário atual era de R$ ${sl.toLocaleString('pt-BR')}.</p>`
             res.innerHTML += `<p>Com um aumento de ${por}% o salário de ${nome} vai aumenta em R$ ${aumento.toLocaleString('pt-BR')}.</p>`
             res.innerHTML += `E ${nome} vai passar a receber R$ ${rsl.toLocaleString('pt-BR')}`
