@@ -11,8 +11,22 @@
     <div id="res">Clique no botão acima para iniciar!</div>
 </body>
 <script>
+    var res = window.document.getElementById('res')
     function converter() {
         var m = prompt('Digite uma distancia em metros(m)')
+        var km = m / 1000
+        var hm = m / 100
+        var dam = m / 10
+        var dm = m * 10
+        var cm = m * 100
+        var mm = m * 1000
+        res.innerHTML = `<h1>${m.toLocaleString('pt-br')} Metros são...</h1>`
+        res.innerHTML += `<p>${km.toLocaleString('pt-BR')} quilômetros (Km)</p>`
+        res.innerHTML += `<p>${hm.toLocaleString('pt-br')} hectômetros (Hm)</p>`
+        res.innerHTML += `<p>${dam.toLocaleString('pt-br')} decâmetros (Dam)</p>`
+        res.innerHTML += `<p>${dm.toLocaleString('pt-br')} decímetros (dm)</p>`
+        res.innerHTML += `<p>${cm.toLocaleString('pt-br')} centímetros (cm)</p>`
+        res.innerHTML += `<p>${mm.toLocaleString('pt-br')} milímetros (mm)</p>`
     }
 </script>
 </html>
