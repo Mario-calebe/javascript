@@ -61,7 +61,7 @@ function verificar() {
         res.style.height = '310px'
         res.style.width = '100%'
         res.style.textAlign = 'center'
-        res.style.padding = '10px'
+        res.style.padding = '10px'  
         img.style.height = '300px'
         img.style.width = '300px'
         img.style.margin = 'auto'
