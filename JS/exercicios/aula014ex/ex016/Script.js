@@ -1,33 +1,32 @@
 function contar() {
-    let inc = document.getElementById('inicio')
+    let ini = document.getElementById('inicio')
     let fim = document.getElementById('fim')
     let passo = document.getElementById('passo')
     let res = document.getElementById('res')
-    
-    if (inc.value.length == 0 || fim.value.length == 0) {
-        alert('[Erro] Valores invalidos!')
-        res.innerHTML = `Imposivel Contar!`
-    } else {
-
-        let i = Number(inc.value)
-        let f = Number(fim.value)
-        let p = Number(passo.value)
-        res.innerHTML = `<h1 class = "hres" >Contando:</h1>`
-
-        if(passo.value == 0 || p <= 0){
-            alert(`Passos invalidos!\nConsiderando PASSO 1`)
-            p = 1
-            passo.value = 1
+    if (ini.value.length == 0 || fim.value.length == 0) {
+        res.innerHTML = `<h1>Impossivel contar!</h1>`
+    }else{
+        res.innerHTML = ''
+        let n1 = Number(ini.value)
+        let n2 = Number(fim.value)
+        let n3 = Number(passo.value)
+        if(n3 <= 0){
+            alert('Passo minimo = 1')
+            n3 = 1
+            passo.value = '1'
         }
-        if(i > f){//Contagem Regressiva
-            for(let c = i; c >= f; c -= p){
-            res.innerHTML += `${c}👉`
-            }
-        }else{// Contagem Crescente
-            for(let c = i; c <= f; c += p){
-            res.innerHTML += `${c}👉`
-            }
+        res.innerHTML =`<h1 class = "hres"> Contando: </h1>`
+        if (n1 <= n2) {
+            for (let c = n1; c <= n2;c += n3) {
+            res.innerHTML += `${c} \u{1F449}`
         }
-    res.innerHTML += `🚧` 
+        }else {
+            for (let c = n1; c >= n2; c -= n3){
+                res.innerHTML += `${c} \u{1F449}`
+            }
+
+        }
+
+        res.innerHTML += `\u{1F6A7}`
     }
 }
