@@ -1,0 +1,33 @@
+
+html,body{
+    height: 97vh;
+    width: 95vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+main{
+    width: 99%;
+    margin: auto;
+    text-align: center;
+}
+
+.buttons{
+    width: 25%;
+    height: 100px;
+}
+
+.yesorno{
+    margin: 2px;
+    padding: 20px;
+}
+@media screen and (min-width: 1280px) {
+    main{
+        
+    }    
+    .buttons{
+        width: 10%;
+        height: 100px;
+    }
+}
